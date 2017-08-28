@@ -16,7 +16,8 @@
 
 			promise.then(function (response) {
 				if(response.length){
-					nd.searchResults = response;	
+					nd.searchResults = response;
+					nd.notFound = "";
 				}
 				else{
 					nd.searchResults = [];
