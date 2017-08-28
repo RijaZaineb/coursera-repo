@@ -95,19 +95,5 @@
 		service.getboughtDoneStatus = function(){
 			return service.boughtDoneStatus;
 		}
-		// service.buyDoneStatus = function()
-		// {
-		// 	if(buylist.length == 0){
-		// 		return true;
-		// 	}
-		// 	return false;
-		// }
-
-		// service.boughtDoneStatus = function(){
-		// 	if(boughtlist.length == 0){
-		// 		return true;
-		// 	}
-		// 	return false;
-		// }
 	}
 })();
