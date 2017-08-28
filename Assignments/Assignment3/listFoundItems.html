@@ -1,0 +1,24 @@
+<div ng-if="found.length">
+  <table class="table" style="width: 100%;">
+    <thead>
+      <tr> 
+        <th>Short Name</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="items in found">
+        <td>{{items.short_name}}</td>
+        <td>{{items.name}}</td>
+        <td>{{items.description}}</td>
+        <td>
+          <button class="btn btn-primary" ng-click = "onRemove({index: $index});">Don't want this one!</button> <br><br>
+        </td>
+      </tr>
+      <tr></tr>
+    </tbody>
+  </table>
+</div>
+<div ng-if="notFound">{{notFound}}</div>
